@@ -1,0 +1,133 @@
+
+.special-title 
+{
+    font-weight: 800;
+    font-size: 3em ;
+    text-transform: uppercase;
+    width: fit-content;
+    margin: 15px auto;
+    color: #282c34;
+    letter-spacing: 10px;
+    position: relative;
+}
+.special-title::after 
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 5px;
+    background-color: #61dafb;
+}
+.special-title::before 
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 5px;
+    background-color: #61dafb;
+}
+.Posts-Container 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.post 
+{
+    width: 300px;
+    border: 1px solid #ddd;
+    padding: 25px;
+    background-color: #f2f2f2;
+}
+.post .image 
+{
+    width: 100%;
+    height: 60%;
+}
+.post .image img 
+{
+    width: 100%;
+    height: 100%;
+}
+.post h3 
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+.loading 
+{
+    height: 40vh;
+    text-align: center;
+    color: #61dafb;
+    background-color:  #282c34;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 800;
+    font-size: 28px;
+    text-transform: capitalize;
+}
+.loading span 
+{
+    width: 300px;
+    position: relative;
+    padding: 15px 0;
+}
+.loading span::after 
+{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #61dafb; 
+    animation: LoadingMontion 10s linear infinite;
+}
+.btn-more 
+{
+    display: block;
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    background-color: #282c34;
+    color: white;
+    margin: 30px auto;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 800;
+    cursor: pointer;
+}
+.btn-read 
+{
+    text-transform: capitalize;
+    text-align: center;
+    color: #282c34;
+    display: block;
+    width: 100%;
+    font-weight: 800;
+    padding: 10px 0;
+    background-color: #ddd;
+    margin: 10px 0;
+}
+@keyframes LoadingMontion 
+{
+    from 
+    {
+        width : 0;
+    }
+    to 
+    {
+        width : 100%;
+    }
+}
